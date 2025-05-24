@@ -1,12 +1,18 @@
 {
-  "name": "ai-study-assistent",
+  "name": "mindmate",
+  "version": "1.0.0",
+  "description": "AI-powered study assistant with note organization, summaries, quizzes, and AI chat",
   "private": true,
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
+    "dev:client": "cd apps/client && npm run dev",
+    "dev:server": "cd apps/server && npm run dev",
+    "start": "./start.sh",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "check-types": "turbo run check-types"
+    "check-types": "turbo run check-types",
+    "install:all": "npm install && cd apps/client && npm install && cd ../server && npm install"
   },
   "devDependencies": {
     "prettier": "^3.5.3",
